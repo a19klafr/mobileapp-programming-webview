@@ -16,6 +16,8 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    private WebView myWebView;
+
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
     }
@@ -23,9 +25,6 @@ public class MainActivity extends AppCompatActivity {
     public void showInternalWebPage(){
         // TODO: Add your code for showing internal web page here
     }
-
-
-    private WebView myWebView;
 
 
     @Override
@@ -74,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Hello World!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
